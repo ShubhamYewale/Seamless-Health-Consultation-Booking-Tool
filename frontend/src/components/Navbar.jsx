@@ -39,7 +39,7 @@ const Navbar = () => {
                 <li className='py-1'> CONTACT </li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
-            <NavLink to="http://localhost:5174/" target="_blank" rel="noopener noreferrer">
+            <NavLink to="https://dr-booking-2.onrender.com" target="_blank" rel="noopener noreferrer">
                 <li className='border px-2.5 py-0.5 rounded-full border-gray-500 '>ADMIN PANEL</li>
             </NavLink>
         </ul>
@@ -78,7 +78,7 @@ const Navbar = () => {
                     <NavLink  onClick={()=>setshowmenu(false)} to='/about'><p className='px-4 py-2 rounded inline-block'>ABOUT</p></NavLink>
                     <NavLink  onClick={()=>setshowmenu(false)} to='/contact'><p className='px-4 py-2 rounded inline-block'>CONTACT</p></NavLink>
                     <a 
-                        href="https://admin-healify.vercel.app" 
+                        href="https://dr-booking-2.onrender.com" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         onClick={()=>setshowmenu(false)}
