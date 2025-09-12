@@ -1,10 +1,11 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-const mongo_url =
-  process.env.MONGO_URI ||
-  "mongodb+srv://shubhamyewale1213_db_user:hRZt3glcUx8h7oOH@cluster0.mmmpl63.mongodb.net/Doctors?retryWrites=true&w=majority";
+dotenv.config(); // Load .env variables
 
-async function main() {
+const mongo_url = process.env.MONGO_URI;
+
+async function connectDB() {
   try {
     await mongoose.connect(mongo_url, {
       useNewUrlParser: true,
@@ -17,6 +18,4 @@ async function main() {
   }
 }
 
-main();
-
-export default main;
+export default connectDB;
