@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const mongo_url = "mongodb://localhost:27017/Doctors";
+const mongo_url = "shubhamyewale1213_db_user:hRZt3glcUx8h7oOH@cluster0.mmmpl63.mongodb.net/Doctors";
 
 main()
 .then(() =>{
